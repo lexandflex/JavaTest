@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/dao/fake/DoctorDaoFakeImpl.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/dao/fake/SpecialityDaoFakeImpl.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/domain/Doctor.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/service/RoleService.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/service/RoleServiceImpl.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/service/UserService.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/test/Utility.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/test/dao/DoctorDaoReadBySpecialityTest.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/test/dao/DoctorDaoReadTest.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/test/dao/DoctorDaoUpdateTest.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/test/dao/SpecialityDaoCreateTest.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/test/dao/SpecialityDaoDeleteTest.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/test/dao/SpecialityDaoReadAllTest.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/test/service/DoctorServiceFindBySpecialityTest.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/test/service/SpecialityServiceFindAllTest.java" charset="windows-1251" />
+  </component>
+</project>

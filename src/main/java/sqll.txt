@@ -1,0 +1,48 @@
+
+
+CREATE TABLE speciality (
+	id INT PRIMARY KEY AUTO_INCREMENT ,
+	name TEXT NOT NULL,
+	is_narrow_specialist BOOL NOT NULL,
+	doctors_count INT NOT NULL,
+	wage_rate DOUBLE NOT NULL,
+	salary_expenses DOUBLE NOT NULL
+);
+
+CREATE TABLE doctor (
+	id INT PRIMARY KEY AUTO_INCREMENT ,
+	speciality_id
+	INT NOT NULL,
+	first_name TEXT NOT NULL,
+	last_name TEXT NOT NULL,
+	patronymic TEXT NOT NULL,
+	birthday_date TEXT NOT NULL,
+	employment_date TEXT NOT NULL,
+	lot_number INT,
+	salary DOUBLE NOT NULL
+);
+
+ALTER TABLE doctor ADD CONSTRAINT fk_speciality_rt_doctor
+FOREIGN KEY(speciality_id) REFERENCES speciality(id)
+ON UPDATE RESTRICT
+ON DELETE CASCADE;
+
+INSERT INTO speciality
+(name, is_narrow_specialist, doctors_count, wage_rate, salary_expenses)
+VALUES
+('хирург', true, 1, 0.5, 85678.33),
+('стоматолог', true, 3, 0.6, 92278.33),
+('терапевт', false, 5, 0.4, 35678.33);
+
+INSERT INTO doctor
+( speciality_id, first_name, last_name, patronymic, birthday_date,
+employment_date, lot_number, salary)
+VALUES
+(1, 'Голуб', 'Прокопцов', 'Прокопович', '26.03.1999', '22.10.2018', null, 900.65),
+(2, 'Самир', 'Соловьев', 'Закопович', '11.01.1956', '12.01.1988', null, 1750.22),
+(3, 'Никита', 'Анопко', 'Витальевич', '22.02.1987', '01.12.2009', null, 1200.32),
+(3, 'Виталий', 'Прутков', 'Сергеевич', '07.09.1999', '24.08.2019', null, 650.22);
+
+
+
+
